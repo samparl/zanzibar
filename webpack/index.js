@@ -13,8 +13,11 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   resolve: {
-
     extensions: [".wasm", ".ts", ".tsx", ".mjs", ".cjs", ".js", ".json"],
+    modules: [
+      'node_modules',
+      'src/common',
+    ]
   },
   module: {
     rules: [
